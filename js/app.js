@@ -1,4 +1,4 @@
-/*trabajo js1
+/*Proyecto1 js1 (Javasript)
 console.log("hola mundo")
 document.write("<h3 class='color2'> hola </h3>")
 let maxi="chau"
