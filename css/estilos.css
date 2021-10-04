@@ -2,13 +2,16 @@
     background-color: rgb(123, 236, 16);  
 }
 .color2{
-    background-color: darkorchid;    
+    color: darkorchid;    
 } 
 .color3{  
     color: blue;
 }
 .color4{ 
      color: cornflowerblue;
+}
+.color5{
+     color: indianred;
 }
 .slide-top {
 	animation: slide-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2 alternate-reverse ;
