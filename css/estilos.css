@@ -13,6 +13,9 @@
 .color5{
      color: indianred;
 }
+.back{ 
+    color: blueviolet;
+}
 .slide-top {
 	animation: slide-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2 alternate-reverse ;
 
