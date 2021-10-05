@@ -1,15 +1,17 @@
 <!--   
-         1) 
+          1) 
             a)justify-content-around => "acomodar contenido 
-            separado proporcionalmente"
+              separado proporcionalmente"
             b)justify-content-start =>"acomoda todo al principio"
             c)justify-content-center =>"centra el contenido"
             d)justify-content-end =>"contenido en el final"
-         2) row => fila
-         3) col-xx => valores de columnas entre 1 y 12
-         4) mt-x => valor para margen superior entre 1 y 5
-         5) mb-x => valor para margen inferior entre 1 y 5
-         6) <img src="..." class="img-fluid" alt="...">
+            e)justify-content-between =>"contenido en esquinas"
+          2) row => fila
+          3) col-xx => valores de columnas entre 1 y 12
+          4) mt-x => valor para margen superior entre 1 y 5
+          5) mb-x => valor para margen inferior entre 1 y 5
+          6) <img src="..." class="img-fluid" alt="...">
+
          Propiedades de texto
          7)Alineaciones
             a)text-start => (texto al inicio de la hoja)
@@ -19,18 +21,66 @@
             <p class="text-lowercase">Lowercased text.</p>
             <p class="text-uppercase">Uppercased text.</p>
             <p class="text-capitalize">CapiTaliZed text.</p>
+
         9)fs-x (va del 1 al 6) => tamaño de  letra
-        10)
-            <p class="fw-bold">Bold text.</p>
+
+        10) <p class="fw-bold">Bold text.</p>
             <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
             <p class="fw-normal">Normal weight text.</p>
-            < p class="fw-light">Light weight text.</p>
+            <p class="fw-light">Light weight text.</p>
             <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
             <p class="fst-italic">Italic text.</p>
             <p class="fst-normal">Text with normal font style</p>
-            11) 
-                <p class="text-decoration-underline">This text has a line underneath it.</p>
-                <p class="text-decoration-line-through">This text has a line going through it.</p>
+         11) 
+            <p class="text-decoration-underline">This text has a line underneath it.</p>
+            <p class="text-decoration-line-through">This text has a line going through it.</p>
+
+         12)Adaptable contenido a pantalla
+           <  576px => col-
+           >= 576px => col-sm
+           >= 768px => col-md
+           >= 992px => col-lg
+           >= 1200px => col-xl
+           >= 1400px => col-xxl
+
+         13)Alineacion Vertical (Align vertical)
+           align-self-start
+           align-self-center
+           align-self-end
+           align-items-start
+           align-items-center
+           align-items-end
+
+         14)@media (Oculta ovisualiza contenido)
+           display:none -oculta contenido-
+           display:block -visualiza contenido-
+
+           @media(max-with:xxxpx){
+             .clase{
+               display:none;
+              }
+           @media(min-with:xxxpx){
+             .clase{
+               background-color:····;
+              }
+
+          15)KEYFRAMES (animaciones objetos textos)
+            se puede combinar con otras propiedades
+            .slide-top:hover {
+            animation: slide-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2 alternate-reverse ;
+            }
+            @keyframes slide-top {
+            0% {
+            transform: translateY(0);
+            }
+            50% {
+            transform: translateY(-100px);
+            }
+            100%{
+            transform: translateY(0);
+            }
+            }
+                  
 -->
 <html>
   <head>
@@ -107,7 +157,7 @@
                      <img src="./img/descarga (2).jpg" class="card-img-top" alt="...">
                      <div class="card-body">
                      <h5 class="card-title">El Arte </h5>
-                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                     <p class="card-text">Es el carisma y lenguaje de las formas,colores,matices,impresos en lienzos,esculturas presentados al mundo por doquier
                      </p>
                      <a href="index.html" class="btn btn-outline-danger">HOME</a>
                    </div>
@@ -117,7 +167,8 @@
                       <img src="./img/descarga (3).jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                       <h5 class="card-title">El Arte y sus beneficios</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                      <p class="card-text">El mayor beneficio es en nuestro ser de forma integral.Activa mejora todas las áreas de nuestra mente y cuerpo,
+                        desde el pensamiento hasta la irrigación cerebral
                       </p>
                       <a href="informacion.html" class="btn btn-outline-info">INFO</a>
                     </div>
@@ -126,7 +177,7 @@
                    <img src="./img/descarga (4).jpg" class="card-img-top" alt="...">
                    <div class="card-body">
                    <h5 class="card-title">El Arte es belleza y vida</h5>
-                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                   <p class="card-text">Ayuda a despertar y fortalecer la inteligencia estética ,a percibir la belleza de la vida y de todas las cosas creadas
                    </p>
                    <a href="Nuestro Arte.html" class="btn btn-outline-success">NUESTRO ARTE</a>
                  </div>
