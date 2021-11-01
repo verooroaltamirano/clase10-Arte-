@@ -17,8 +17,7 @@
     color: blueviolet;
 }
 .slide-top {
-	animation: slide-top 0.9 s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2 alternate-reverse ;
-
+	animation: slide-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2 both;
 }
  @keyframes slide-top {
     0% {
@@ -32,7 +31,7 @@
     }
   }
   .colorcambio {
-	animation: cambio 2s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both;
+	animation: cambio 2s cubic-bezier(0.250, 0.460, 0.450, 0.940)both;
 }
 @keyframes cambio {
     0% {
